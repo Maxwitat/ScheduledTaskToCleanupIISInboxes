@@ -1,0 +1,2 @@
+# ScheduledTaskToCleanupIISInboxes
+By default, IIS creates a new log file every day and never deletes any old files. To limit the disk space of the files, it is therefore important to implement a cleanup task. The script below creates a scheduled task that will run once per week to execute a simple PowerShell command. There are lots of similar solutions available but the beauty of this one is that the scheduled task contains the code for the cleanup, so there's no need to place a script on the disk.
